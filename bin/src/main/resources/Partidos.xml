@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="entity.Partidos">
+        <table name="partidos" schema="nba" catalog=""/>
+        <attributes>
+            <id name="codigo">
+                <column name="Codigo"/>
+            </id>
+            <basic name="equipoLocal">
+                <column name="EquipoLocal"/>
+            </basic>
+            <basic name="equipoVisitante">
+                <column name="EquipoVisitante"/>
+            </basic>
+            <basic name="puntosLocal">
+                <column name="PuntosLocal"/>
+            </basic>
+            <basic name="puntosVisitante">
+                <column name="PuntosVisitante"/>
+            </basic>
+            <basic name="temporada">
+                <column name="Temporada"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

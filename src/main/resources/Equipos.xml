@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="entity.Equipos">
+        <table name="equipos" schema="nba" catalog=""/>
+        <attributes>
+            <id name="nombre">
+                <column name="Nombre"/>
+            </id>
+            <basic name="ciudad">
+                <column name="Ciudad"/>
+            </basic>
+            <basic name="conferencia">
+                <column name="Conferencia"/>
+            </basic>
+            <basic name="division">
+                <column name="Division"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="entity.Jugadores">
+        <table name="jugadores" schema="nba" catalog=""/>
+        <attributes>
+            <id name="codigo">
+                <column name="Codigo"/>
+            </id>
+            <basic name="nombre">
+                <column name="Nombre"/>
+            </basic>
+            <basic name="procedencia">
+                <column name="Procedencia"/>
+            </basic>
+            <basic name="altura">
+                <column name="Altura"/>
+            </basic>
+            <basic name="peso">
+                <column name="Peso"/>
+            </basic>
+            <basic name="posicion">
+                <column name="Posicion"/>
+            </basic>
+            <basic name="nombreEquipo">
+                <column name="NombreEquipo"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>

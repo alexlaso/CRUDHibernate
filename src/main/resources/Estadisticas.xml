@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="entity.Estadisticas">
+        <table name="estadisticas" schema="nba" catalog=""/>
+        <id-class class="entity.EstadisticasPK"/>
+        <attributes>
+            <id name="temporada">
+                <column name="Temporada"/>
+            </id>
+            <id name="codigoJugador">
+                <column name="CodigoJugador"/>
+            </id>
+            <basic name="puntosPorPartido">
+                <column name="PuntosPorPartido"/>
+            </basic>
+            <basic name="asistenciasPorPartido">
+                <column name="AsistenciasPorPartido"/>
+            </basic>
+            <basic name="taponesPorPartido">
+                <column name="TaponesPorPartido"/>
+            </basic>
+            <basic name="rebotesPorPartido">
+                <column name="RebotesPorPartido"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
